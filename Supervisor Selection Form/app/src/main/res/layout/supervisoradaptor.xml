@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp"
+    android:elevation="4dp"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/cardbg"
+        >
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:text="Student Name"
+            android:textColor="@color/headercolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fatherName"
+            android:textSize="25sp"
+            android:text="Father Name"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/registrationNo"
+            android:textSize="25sp"
+            android:text="Registration No."
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/synop1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Research Topic 1"
+            android:textColor="@color/headercolor"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Summ1"
+            android:textSize="25sp"
+            android:text="Summary 1"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/SupSign1"
+            android:textSize="25sp"
+            android:text="Supervisor Sign 1"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Synop2"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Research Topic 2"
+            android:textColor="@color/headercolor"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Summ2"
+            android:textSize="25sp"
+            android:text="Summary 2"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/SupSign2"
+            android:textSize="25sp"
+            android:text="Supervisor Sign 2"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Synop3"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Research Topic 3"
+            android:textColor="@color/headercolor"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Summ3"
+            android:textSize="25sp"
+            android:text="Summary 3"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/SupSign3"
+            android:textSize="25sp"
+            android:text="Supervisor Sign 3"
+            android:layout_marginTop="3dp"
+            />
+
+        <Button
+            android:id="@+id/btn_edit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickEdit"
+            android:text="Edit" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

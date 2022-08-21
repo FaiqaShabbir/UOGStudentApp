@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SupervisorSelectionForm">
+
+    <ScrollView
+        android:id="@+id/Summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="77dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Supervisor Selection Form"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="104dp"
+                android:text="Student Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="48dp"
+                android:ems="10"
+                android:hint="Student Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_form" />
+
+            <TextView
+                android:id="@+id/txt_Fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="44dp"
+                android:text="Father Name"
+                app:layout_constraintBottom_toTopOf="@+id/txt_reg"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_Fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:ems="10"
+                android:hint="Father Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+            <TextView
+                android:id="@+id/txt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="46dp"
+                android:text="Reg No."
+                app:layout_constraintBottom_toTopOf="@+id/txt_synop1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="44dp"
+                android:ems="10"
+                android:hint="Registration Number"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_Fname" />
+
+            <TextView
+                android:id="@+id/txt_synop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="72dp"
+                android:text="Research Topic 1"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sum1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_synop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="75dp"
+                android:text="Research Topic 2"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sum2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_synop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="80dp"
+                android:text="Reseearch Topic 3"
+                app:layout_constraintBottom_toTopOf="@+id/txt_Sum3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_Sum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="84dp"
+                android:text="Summary"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sign3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_sign3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="55dp"
+                android:text="Supervisor Signature"
+                app:layout_constraintBottom_toTopOf="@+id/btnInsert"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_synop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="44dp"
+                android:ems="10"
+                android:hint="Topic"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_reg" />
+
+            <EditText
+                android:id="@+id/edt_synop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="44dp"
+                android:ems="10"
+                android:hint="Topic 2"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_sign1" />
+
+            <EditText
+                android:id="@+id/edt_synop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:ems="10"
+                android:hint="Topic 3"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_sign2" />
+
+            <EditText
+                android:id="@+id/edt_sign3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="46dp"
+                android:ems="10"
+                android:hint="Singnature"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
+
+            <EditText
+                android:id="@+id/edt_sign2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="51dp"
+                android:ems="10"
+                android:hint="Signature"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_sum2" />
+
+            <TextView
+                android:id="@+id/txt_sum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="89dp"
+                android:text="Summary"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sign1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_sum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="76dp"
+                android:text="Summary"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sign2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_sum1"
+                android:layout_width="208dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Summary......"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_synop1" />
+
+            <EditText
+                android:id="@+id/edt_sum2"
+                android:layout_width="208dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="49dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Summary...."
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_synop2" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="208dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Summary..."
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_synop3" />
+
+            <TextView
+                android:id="@+id/txt_sign1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="55dp"
+                android:text="Supervisor Sign"
+                app:layout_constraintBottom_toTopOf="@+id/txt_synop2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_sign1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="44dp"
+                android:ems="10"
+                android:hint="Signature"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_sum1" />
+
+            <TextView
+                android:id="@+id/txt_sign2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="50dp"
+                android:text="Supervisor Sign"
+                app:layout_constraintBottom_toTopOf="@+id/txt_synop3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="onClickInsert"
+                android:text="INSERT"
+                app:layout_constraintBottom_toTopOf="@+id/btn_del"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginBottom="44dp"
+                android:onClick="onClickDelete"
+                android:text="DELETE"
+                app:layout_constraintBottom_toTopOf="@+id/btn_ftd"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="92dp"
+                android:layout_marginBottom="44dp"
+                android:onClick="onClickView"
+                android:text="VIEW"
+                app:layout_constraintBottom_toTopOf="@+id/btn_ftd"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="22dp"
+                android:onClick="onClickUpdate"
+                android:text="UPDATE"
+                app:layout_constraintBottom_toTopOf="@+id/btn_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_sign3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btn_ftd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="73dp"
+                android:layout_marginEnd="92dp"
+                android:text="View on Separate Screen"
+                android:onClick="onClickFetchData"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        >
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>
